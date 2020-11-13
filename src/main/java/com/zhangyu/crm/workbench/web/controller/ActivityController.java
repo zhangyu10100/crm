@@ -4,6 +4,7 @@ import com.zhangyu.crm.settings.domain.User;
 import com.zhangyu.crm.settings.service.UserService;
 import com.zhangyu.crm.settings.service.impl.UserServiceImpl;
 import com.zhangyu.crm.utils.*;
+import com.zhangyu.crm.vo.PaginationVo;
 import com.zhangyu.crm.workbench.domain.Activity;
 import com.zhangyu.crm.workbench.service.ActivityService;
 import com.zhangyu.crm.workbench.service.impl.ActivityServiceImpl;
@@ -26,7 +27,98 @@ public class ActivityController extends HttpServlet {
             getUserList(request,response);
         }else if ("/workbench/activity/save.do".equals(path)){
             save(request,response);
+        }else if ("/workbench/activity/pageList.do".equals(path)){
+            pageList(request,response);
+        }else if ("/workbench/activity/delete.do".equals(path)){
+            delete(request,response);
+        }else if ("/workbench/activity/getUserListAndActivity.do".equals(path)){
+            getUserListAndActivity(request,response);
+        }else if ("/workbench/activity/update.do".equals(path)){
+            update(request,response);
         }
+    }
+
+    private void update(HttpServletRequest request, HttpServletResponse response) {
+        System.out.println("执行市场活动修改的操作");
+
+
+        String startDate = request.getParameter("startDate");
+        //System.out.println(request.getParameter("owner"));
+        String owner = request.getParameter("owner");
+        String name = request.getParameter("name");
+        String id = request.getParameter("id");
+        String endDate = request.getParameter("endDate");
+        String description = request.getParameter("description");
+        String editTime = DateTimeUtil.getSysTime();
+        String editBy = ((User)request.getSession().getAttribute("user")).getName();
+        String cost = request.getParameter("cost");
+
+        Activity a = new Activity();
+        a.setId(id);
+        a.setCost(cost);
+        a.setEditBy(editBy);
+        a.setEditTime(editTime);
+        a.setEndDate(endDate);
+        a.setDescription(description);
+        a.setName(name);
+        a.setOwner(owner);
+        a.setStartDate(startDate);
+
+        ActivityService as = (ActivityService) ServiceFactory.getService(new ActivityServiceImpl());
+
+        boolean flag = as.update(a);
+        PrintJson.printJsonFlag(response,flag);
+
+
+    }
+
+    private void getUserListAndActivity(HttpServletRequest request, HttpServletResponse response) {
+        System.out.println("进入到查询用户信息列表和根据市场活动id查询单条记录的操作");
+        String id = request.getParameter("id");
+        ActivityService as = (ActivityService) ServiceFactory.getService(new ActivityServiceImpl());
+
+        Map<String,Object>map = as.getUserListAndActivity(id);
+
+        PrintJson.printJsonObj(response,map);
+    }
+
+    private void delete(HttpServletRequest request, HttpServletResponse response) {
+        System.out.println("执行市场活动的删除操作");
+        String ids[] = request.getParameterValues("id");
+        ActivityService as = (ActivityService) ServiceFactory.getService(new ActivityServiceImpl());
+
+
+        boolean flag = as.delete(ids);
+        PrintJson.printJsonFlag(response,flag);
+    }
+
+    private void pageList(HttpServletRequest request, HttpServletResponse response) {
+        System.out.println("进入查询市场活动信息列表的操作（结合条件查询和分页查询）");
+        String name = request.getParameter("name");
+        String owner = request.getParameter("owner");
+        String startDate = request.getParameter("startDate");
+        String endDate = request.getParameter("endDate");
+        String pageNoStr = request.getParameter("pageNo");
+        int pageNo = Integer.valueOf(pageNoStr);
+        System.out.println("----->" + pageNoStr);
+        String pageSizeStr = request.getParameter("pageSize");
+        int pageSize = Integer.valueOf(pageSizeStr);
+
+        //计算出略过的记录数
+        int skipCount = (pageNo - 1)*pageSize;
+
+        Map<String,Object> map = new HashMap<>();
+        map.put("name",name);
+        map.put("owner",owner);
+        map.put("startDate",startDate);
+        map.put("endDate",endDate);
+        map.put("skipCount",skipCount);
+        map.put("pageSize",pageSize);
+
+        ActivityService as = (ActivityService) ServiceFactory.getService(new ActivityServiceImpl());
+
+        PaginationVo<Activity> vo = as.pageList(map);
+        PrintJson.printJsonObj(response,vo);
     }
 
     private void save(HttpServletRequest request, HttpServletResponse response) {
