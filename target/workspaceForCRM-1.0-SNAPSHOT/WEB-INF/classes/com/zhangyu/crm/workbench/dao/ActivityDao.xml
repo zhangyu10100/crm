@@ -119,4 +119,23 @@
             cost = #{cost}
             where id = #{id}
     </update>
+
+    <select id="detail" resultType="Activity">
+         select
+         a.startDate,
+         u.name as owner,
+         a.name,
+         a.id,
+         a.endDate,
+         a.editTime,
+         a.editBy,
+         a.description,
+         a.createTime,
+         a.createBy,
+         a.cost
+         from tbl_activity a
+         join tbl_user u
+         on a.owner=u.id
+         where a.id=#{id}
+    </select>
 </mapper>
