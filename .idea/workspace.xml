@@ -27,31 +27,79 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98445ad3-db5f-4720-97b5-781680d114e4" name="Default Changelist" comment="version-3 11-13-2020">
+    <list default="true" id="98445ad3-db5f-4720-97b5-781680d114e4" name="Default Changelist" comment="version-4 11-15-2020">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/settings/dao/DicTypeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/settings/dao/DicTypeDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/settings/dao/DicValueDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/settings/dao/DicValueDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/settings/domain/DicType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/settings/domain/DicValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/settings/service/DicService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/settings/service/impl/DicServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/ClueActivityRelationDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/ClueActivityRelationDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/ClueDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/ClueDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/ClueRemarkDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/ClueRemarkDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/ContactsActivityRelationDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/ContactsActivityRelationDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/ContactsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/ContactsDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/ContactsRemarkDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/ContactsRemarkDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/CustomerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/CustomerDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/CustomerRemarkDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/CustomerRemarkDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/TranDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/TranDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/TranHistoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/TranHistoryDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/domain/Clue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/domain/ClueActivityRelation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/domain/ClueRemark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/domain/Contacts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/domain/ContactsActivityRelation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/domain/ContactsRemark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/domain/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/domain/CustomerRemark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/domain/Tran.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/domain/TranHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/service/ClueService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/service/impl/ClueServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/web/controller/ClueController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/ActivityDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/ActivityDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/ActivityDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/ActivityDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/ActivityRemarkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/ActivityRemarkDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/ActivityRemarkDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/dao/ActivityRemarkDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/service/ActivityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/service/ActivityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/service/impl/ActivityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/service/impl/ActivityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/web/controller/ActivityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/workbench/web/controller/ActivityController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/workbench/activity/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/workbench/activity/detail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/workbench/activity/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/workbench/activity/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhangyu/crm/workbench/dao/ActivityDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zhangyu/crm/workbench/dao/ActivityDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhangyu/crm/workbench/dao/ActivityDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zhangyu/crm/workbench/dao/ActivityDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhangyu/crm/workbench/service/ActivityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zhangyu/crm/workbench/service/ActivityService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhangyu/crm/workbench/service/impl/ActivityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zhangyu/crm/workbench/service/impl/ActivityServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhangyu/crm/workbench/web/controller/ActivityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zhangyu/crm/workbench/web/controller/ActivityController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/WEB-INF/classes/com/zhangyu/crm/workbench/dao/ActivityDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/WEB-INF/classes/com/zhangyu/crm/workbench/dao/ActivityDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/WEB-INF/classes/com/zhangyu/crm/workbench/dao/ActivityDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/WEB-INF/classes/com/zhangyu/crm/workbench/dao/ActivityDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/WEB-INF/classes/com/zhangyu/crm/workbench/service/ActivityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/WEB-INF/classes/com/zhangyu/crm/workbench/service/ActivityService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/WEB-INF/classes/com/zhangyu/crm/workbench/service/impl/ActivityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/WEB-INF/classes/com/zhangyu/crm/workbench/service/impl/ActivityServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/WEB-INF/classes/com/zhangyu/crm/workbench/web/controller/ActivityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/WEB-INF/classes/com/zhangyu/crm/workbench/web/controller/ActivityController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/settings/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/settings/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/workbench/clue/convert.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/workbench/clue/convert.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/workbench/clue/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/workbench/clue/detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/workbench/clue/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/workbench/clue/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/workbench/contacts/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/workbench/contacts/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/workbench/contacts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/workbench/contacts/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/workbench/customer/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/workbench/customer/detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/workbench/customer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/workbench/customer/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/workbench/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/workbench/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/workbench/transaction/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/workbench/transaction/detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/workbench/transaction/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/workbench/transaction/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/workbench/transaction/save.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/workbench/transaction/save.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zhangyu/crm/workbench/dao/ActivityRemarkDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zhangyu/crm/workbench/dao/ActivityRemarkDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zhangyu/crm/workbench/dao/ActivityRemarkDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zhangyu/crm/workbench/dao/ActivityRemarkDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/WEB-INF/classes/com/zhangyu/crm/workbench/dao/ActivityRemarkDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/WEB-INF/classes/com/zhangyu/crm/workbench/dao/ActivityRemarkDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/WEB-INF/classes/com/zhangyu/crm/workbench/dao/ActivityRemarkDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/WEB-INF/classes/com/zhangyu/crm/workbench/dao/ActivityRemarkDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/workbench/activity/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/workbench/activity/detail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/workbench/activity/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/workbench/activity/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/settings/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/settings/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/workbench/clue/convert.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/workbench/clue/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/workbench/clue/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/workbench/contacts/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/workbench/contacts/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/workbench/contacts/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/workbench/customer/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/workbench/customer/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/workbench/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/workbench/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/workbench/transaction/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/workbench/transaction/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/workspaceForCRM-1.0-SNAPSHOT/workbench/transaction/save.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,8 +112,8 @@
         <option value="Jsp File" />
         <option value="basePath" />
         <option value="Tag Library Descriptor" />
-        <option value="Interface" />
         <option value="mybatis-mapper" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -103,7 +151,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/zhangyu/crm/settings/dao" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -115,11 +163,11 @@
       <recent name="com.zhangyu.crm.workbench.web.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\my_code\CRM\workspaceForCRM\src\main\java\com\zhangyu\crm\settings\dao" />
+      <recent name="D:\my_code\CRM\workspaceForCRM\src\main\java\com\zhangyu\crm\workbench\dao" />
+      <recent name="D:\my_code\CRM\workspaceForCRM\src\main\java\com\zhangyu\crm\workbench\domain" />
       <recent name="D:\my_code\CRM\workspaceForCRM\src\main\webapp" />
       <recent name="D:\my_code\CRM\workspaceForCRM\src\main\java\com\zhangyu\crm\utils" />
-      <recent name="D:\my_code\CRM\workspaceForCRM\target\classes" />
-      <recent name="D:\my_code\CRM\workspaceForCRM\target\classes\com\zhangyu\crm\settings\dao" />
-      <recent name="D:\my_code\CRM\workspaceForCRM\src\main\java\com\zhangyu\crm\settings\dao" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.0">
@@ -249,7 +297,7 @@
       <workItem from="1604582241869" duration="14540000" />
       <workItem from="1604929624226" duration="30210000" />
       <workItem from="1605232369521" duration="8893000" />
-      <workItem from="1605349873816" duration="11372000" />
+      <workItem from="1605349873816" duration="14729000" />
     </task>
     <task id="LOCAL-00001" summary="version-1 11-10-2020">
       <created>1605011253284</created>
@@ -272,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605235469210</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="version-4 11-15-2020">
+      <created>1605444463626</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605444463626</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +349,8 @@
     <MESSAGE value="version-1 11-10-2020" />
     <MESSAGE value="version-2 11-11-2020" />
     <MESSAGE value="version-3 11-13-2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="version-3 11-13-2020" />
+    <MESSAGE value="version-4 11-15-2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="version-4 11-15-2020" />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Project_Structure" timestamp="1605009686374">
@@ -309,10 +365,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="0" width="1089" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1605010333834" />
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1605360651661">
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1605447372318">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605360651661" />
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605447372318" />
+    <state x="386" y="90" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1605444433891">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="386" y="90" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.824@0.0.1536.824" timestamp="1605444433891" />
     <state x="490" y="69" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1604927825620">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -325,54 +385,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="128" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605011046968" />
-    <state width="1129" height="69" key="GridCell.Tab.0.bottom" timestamp="1605443815372">
+    <state width="1129" height="64" key="GridCell.Tab.0.bottom" timestamp="1605446247596">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1129" height="69" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605443815372" />
-    <state width="1129" height="69" key="GridCell.Tab.0.center" timestamp="1605443815372">
+    <state width="1129" height="64" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605446247596" />
+    <state width="1129" height="64" key="GridCell.Tab.0.center" timestamp="1605446247596">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1129" height="69" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605443815372" />
-    <state width="1129" height="69" key="GridCell.Tab.0.left" timestamp="1605443815372">
+    <state width="1129" height="64" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605446247596" />
+    <state width="1129" height="64" key="GridCell.Tab.0.left" timestamp="1605446247596">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1129" height="69" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605443815372" />
-    <state width="1129" height="69" key="GridCell.Tab.0.right" timestamp="1605443815372">
+    <state width="1129" height="64" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605446247596" />
+    <state width="1129" height="64" key="GridCell.Tab.0.right" timestamp="1605446247596">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1129" height="69" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605443815372" />
-    <state width="1129" height="69" key="GridCell.Tab.1.bottom" timestamp="1605443815263">
+    <state width="1129" height="64" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605446247596" />
+    <state width="1129" height="64" key="GridCell.Tab.1.bottom" timestamp="1605446247596">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1129" height="69" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605443815263" />
-    <state width="1129" height="69" key="GridCell.Tab.1.center" timestamp="1605443815263">
+    <state width="1129" height="64" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605446247596" />
+    <state width="1129" height="64" key="GridCell.Tab.1.center" timestamp="1605446247596">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1129" height="69" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605443815263" />
-    <state width="1129" height="69" key="GridCell.Tab.1.left" timestamp="1605443815263">
+    <state width="1129" height="64" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605446247596" />
+    <state width="1129" height="64" key="GridCell.Tab.1.left" timestamp="1605446247596">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1129" height="69" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605443815263" />
-    <state width="1129" height="69" key="GridCell.Tab.1.right" timestamp="1605443815263">
+    <state width="1129" height="64" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605446247596" />
+    <state width="1129" height="64" key="GridCell.Tab.1.right" timestamp="1605446247596">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1129" height="69" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605443815263" />
-    <state width="1129" height="69" key="GridCell.Tab.2.bottom" timestamp="1605443815263">
+    <state width="1129" height="64" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605446247596" />
+    <state width="1129" height="64" key="GridCell.Tab.2.bottom" timestamp="1605446247596">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1129" height="69" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605443815263" />
-    <state width="1129" height="69" key="GridCell.Tab.2.center" timestamp="1605443815263">
+    <state width="1129" height="64" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605446247596" />
+    <state width="1129" height="64" key="GridCell.Tab.2.center" timestamp="1605446247596">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1129" height="69" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1605443815263" />
-    <state width="1129" height="69" key="GridCell.Tab.2.left" timestamp="1605443815263">
+    <state width="1129" height="64" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1605446247596" />
+    <state width="1129" height="64" key="GridCell.Tab.2.left" timestamp="1605446247596">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1129" height="69" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1605443815263" />
-    <state width="1129" height="69" key="GridCell.Tab.2.right" timestamp="1605443815263">
+    <state width="1129" height="64" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1605446247596" />
+    <state width="1129" height="64" key="GridCell.Tab.2.right" timestamp="1605446247596">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1129" height="69" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1605443815263" />
+    <state width="1129" height="64" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1605446247596" />
     <state width="1129" height="390" key="GridCell.Tab.3.bottom" timestamp="1605184955258">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -397,10 +457,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605235628618" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1605235638953">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1605444656477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605235638953" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605444656477" />
     <state x="348" y="49" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605234083855">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

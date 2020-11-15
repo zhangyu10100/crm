@@ -53,6 +53,14 @@
     <url-pattern>/workbench/activity/updateRemark.do</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <servlet-name>ClueController</servlet-name>
+    <servlet-class>com.zhangyu.crm.workbench.web.controller.ClueController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ClueController</servlet-name>
+    <url-pattern>/workbench/clue/xxx.do</url-pattern>
+  </servlet-mapping>
   
   
 </web-app>
