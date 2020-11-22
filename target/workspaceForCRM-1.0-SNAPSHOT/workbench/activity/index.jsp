@@ -272,7 +272,7 @@
 		$("#qx").prop("checked",false);
 
 
-		//查询钱，将隐藏域中保存的信息取出来，重新赋予到搜索框中
+		//查询前，将隐藏域中保存的信息取出来，重新赋予到搜索框中
 		$("#search-name").val($.trim($("#hidden-name").val()));
 		$("#search-owner").val($.trim($("#hidden-owner").val()));
 		$("#search-startDate").val($.trim($("#hidden-startDate").val()));

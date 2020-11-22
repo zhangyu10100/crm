@@ -1,12 +1,10 @@
-package com.zhangyu.crm.workbench.dao;
+package com.zhangyu.crm.workbench.service;
 
 import com.zhangyu.crm.workbench.domain.Contacts;
 
 import java.util.List;
 
-public interface ContactsDao {
-
-    int save(Contacts con);
+public interface ContactsService {
 
     List<Contacts> getContactsListByName(String cname);
 }

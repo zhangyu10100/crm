@@ -59,7 +59,7 @@ public class ContactsRemark {
 	public void setContactsId(String contactsId) {
 		this.contactsId = contactsId;
 	}
-	
-	
-	
+
+
+
 }
